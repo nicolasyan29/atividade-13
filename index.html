@@ -1,0 +1,72 @@
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ficha de Cadastro Completa</title>
+  <link rel="stylesheet" href="style.css" />
+  <script defer src="script.js"></script>
+</head>
+<body>
+  <main class="container">
+    <h1>Ficha de Cadastro Completa</h1>
+    <form id="cadastroForm">
+      <section>
+        <h2>Informações Pessoais</h2>
+        <input type="text" name="nome" placeholder="Nome completo" required />
+        <input type="date" name="nascimento" required />
+        <input type="text" name="cpf" placeholder="CPF (000.000.000-00)" required />
+        <input type="text" name="rg" placeholder="RG" required />
+        <input type="text" name="sexo" placeholder="Sexo" required />
+        <input type="text" name="nacionalidade" placeholder="Nacionalidade" required />
+        <input type="text" name="estado_civil" placeholder="Estado Civil" required />
+      </section>
+
+      <section>
+        <h2>Endereço</h2>
+        <input type="text" name="cep" placeholder="CEP" required />
+        <input type="text" name="logradouro" placeholder="Logradouro" required />
+        <input type="text" name="numero" placeholder="Número" required />
+        <input type="text" name="bairro" placeholder="Bairro" required />
+        <input type="text" name="cidade" placeholder="Cidade" required />
+        <input type="text" name="estado" placeholder="Estado" required />
+        <input type="text" name="complemento" placeholder="Complemento" />
+      </section>
+
+      <section>
+        <h2>Contatos</h2>
+        <input type="email" name="email" placeholder="E-mail" required />
+        <input type="tel" name="telefone" placeholder="Telefone" required />
+        <input type="tel" name="celular" placeholder="Celular" required />
+        <input type="text" name="linkedin" placeholder="LinkedIn" />
+        <input type="text" name="site" placeholder="Site pessoal" />
+      </section>
+
+      <section>
+        <h2>Dados Profissionais</h2>
+        <input type="text" name="empresa" placeholder="Empresa Atual" />
+        <input type="text" name="cargo" placeholder="Cargo Atual" />
+        <input type="number" name="experiencia" placeholder="Anos de Experiência" />
+        <textarea name="habilidades" placeholder="Descreva suas principais habilidades"></textarea>
+      </section>
+
+      <section>
+        <h2>Formação Acadêmica</h2>
+        <input type="text" name="instituicao" placeholder="Instituição de Ensino" required />
+        <input type="text" name="curso" placeholder="Curso" required />
+        <input type="text" name="nivel" placeholder="Nível (Superior, Técnico, etc)" required />
+        <input type="month" name="inicio" required />
+        <input type="month" name="fim" required />
+        <textarea name="certificacoes" placeholder="Certificações adicionais"></textarea>
+      </section>
+
+      <section>
+        <h2>Outras Informações</h2>
+        <textarea name="objetivos" placeholder="Objetivos profissionais"></textarea>
+        <textarea name="informacoes_adicionais" placeholder="Informações adicionais"></textarea>
+      </section>
+
+      <button type="submit">Enviar</button>
+    </form>
+  </main>
+</body>
+</html>
